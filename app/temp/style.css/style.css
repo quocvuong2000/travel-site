@@ -572,6 +572,10 @@ img {
     padding-right: 65px;
   }
 
+.row--gutters--forItem >div {
+    padding-right: 20px;
+  }
+
 @media (min-width: 800px) {
     .row__medium-4 {
         float: left;
@@ -580,6 +584,11 @@ img {
 
       .row__medium-4--larger {
         width: 37%;
+      }
+
+      .row__medium-6 {
+        float: left;
+        width: 50%;
       }
 
       .row__medium-8 {
@@ -595,10 +604,98 @@ img {
 .generic-content-container p {
         line-height: 1.65;
         font-size: 1.125rem;
-        margin: 1.8rem 0 ;
+        margin: 0 0 1.8rem 0 ;
     }
 
 .generic-content-container p a {
         font-weight: 700;
         color: #e67e22;
     }
+
+.section-title {
+    font-size: 2.8rem;
+    font-weight: 300;
+    text-align: center;
+}
+
+@media (min-width: 530px) {
+
+.section-title {
+        font-size: 3.55rem
+}
+  }
+
+.section-title strong {
+        font-weight: 500;
+    }
+
+.section-title__icon{
+        display: block;
+        margin: 0.5rem auto;
+    }
+
+@media (min-width: 530px) {
+
+.section-title__icon{
+            margin:0;
+            margin-right: .6rem;
+            display: inline-block
+    }
+  }
+
+.feature-item {
+  position: relative;
+}
+
+.feature-item__icon {
+    display: block;
+    margin: 0 auto;
+  }
+
+@media (min-width: 530px) {
+
+.feature-item__icon {
+
+      position: absolute;
+      left: 0
+  }
+  }
+
+.feature-item__title {
+    font-size: 1.5rem;
+    font-weight: 300;
+    margin-bottom: 0.5rem;
+  }
+
+@media (min-width: 530px) {
+
+.feature-item__title {
+      font-size: 1.75rem
+  }
+  }
+
+.feature-item p {
+    text-align: center;
+    font-weight: 200;
+    padding-bottom: 3rem;
+  }
+
+@media (min-width: 530px) {
+
+.feature-item p {
+      padding-left: 94px;
+      text-align: left
+  }
+  }
+
+.feature-item h3 {
+    text-align: center;
+  }
+
+@media (min-width: 530px) {
+
+.feature-item h3 {
+      padding-left: 94px;
+      text-align: left
+  }
+  }

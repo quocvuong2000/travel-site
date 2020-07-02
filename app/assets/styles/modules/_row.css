@@ -11,6 +11,10 @@
     padding-right: 65px;
   }
 
+  &--gutters--forItem >div {
+    padding-right: 20px;
+  }
+
   @mixin atMedium {
     &__medium-4 {
         float: left;
@@ -19,6 +23,11 @@
 
       &__medium-4--larger {
         width: 37%;
+      }
+
+      &__medium-6 {
+        float: left;
+        width: 50%;
       }
 
       &__medium-8 {
@@ -30,5 +39,7 @@
         width: 63%;
       }
   }
+
+
   
 }

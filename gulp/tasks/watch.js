@@ -12,12 +12,18 @@ gulp.task("watch",  () => {
 	});
 	watch("./app/index.html", gulp.series("html"));
 	watch("./app/assets/styles/**/*.css", gulp.series("cssinject"));
-	});
+	watch("./app/assets/scripts/**/*.js", gulp.series("scripts",function() {
+		browserSync.reload();
+	}));
+	});	
 
 gulp.task("cssinject",gulp.series("styles", function()   {
 	return gulp.src("./app/temp/style.css")
 	.pipe(browserSync.stream());
 }));
+// gulp.task("refreshPage",gulp.series("scripts",function() {
+// 	browserSync.reload();
+// }));
 
 gulp.task("html", function() {
 	browserSync.reload();

@@ -4,7 +4,9 @@
   "description": "",
   "main": "index.js",
   "dependencies": {
-    "normalize.css": "^8.0.1"
+    "normalize.css": "^8.0.1",
+    "waypoint": "^0.2.8",
+    "waypoints": "^4.0.1"
   },
   "devDependencies": {
     "@babel/core": "^7.11.5",

@@ -836,9 +836,14 @@ img {
 @media (min-width: 800px) {
 
 .site-header {
-    background-color: rgba(47,85,114, .5)
+    background-color: rgba(47,85,114, .5);
+    position: fixed
 }
   }
+
+.site-header--dark {
+        background-color: rgba(45, 52, 54,1.0);
+    }
 
 @media (min-width: 800px) {
 

@@ -11871,6 +11871,10 @@ var StickyHeader = /*#__PURE__*/function () {
     this.siteHeader = jquery__WEBPACK_IMPORTED_MODULE_0___default()('.site-header');
     this.largeHeroTitle = jquery__WEBPACK_IMPORTED_MODULE_0___default()('.large-hero__title');
     this.createStickyWaypoint();
+    this.pageSection = jquery__WEBPACK_IMPORTED_MODULE_0___default()('.page-section');
+    this.createLinkPointer();
+    this.primaryNav = jquery__WEBPACK_IMPORTED_MODULE_0___default()(".primary-nav a");
+    this.deleteColorWhenReachTitle();
   }
 
   _createClass(StickyHeader, [{
@@ -11885,6 +11889,46 @@ var StickyHeader = /*#__PURE__*/function () {
           } else {
             that.siteHeader.removeClass("site-header--dark");
           }
+        }
+      });
+    }
+  }, {
+    key: "createLinkPointer",
+    value: function createLinkPointer() {
+      var that = this;
+      this.pageSection.each(function (num, els) {
+        new Waypoint({
+          element: els,
+          handler: function handler(direction) {
+            if (direction === 'down') {
+              var currentSection = els.getAttribute("data-machine-link");
+              that.primaryNav.removeClass("is-current-link");
+              jquery__WEBPACK_IMPORTED_MODULE_0___default()(currentSection).addClass("is-current-link");
+            }
+          },
+          offset: "18%"
+        });
+        new Waypoint({
+          element: els,
+          handler: function handler(direction) {
+            if (direction === 'up') {
+              var currentSection = els.getAttribute("data-machine-link");
+              that.primaryNav.removeClass("is-current-link");
+              jquery__WEBPACK_IMPORTED_MODULE_0___default()(currentSection).addClass("is-current-link");
+            }
+          },
+          offset: "-40%"
+        });
+      });
+    }
+  }, {
+    key: "deleteColorWhenReachTitle",
+    value: function deleteColorWhenReachTitle() {
+      var that = this;
+      new Waypoint({
+        element: this.largeHeroTitle[0],
+        handler: function handler() {
+          that.primaryNav.removeClass("is-current-link");
         }
       });
     }

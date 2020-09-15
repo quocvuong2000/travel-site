@@ -19,14 +19,22 @@
 
     &__description {
         text-align: center;
-        font-size : 1.3rem;
+        font-size: 1rem;
+        @mixin atMedium{
+            font-size : 1.3rem;
+        }
     }
 
+    
     &__inner {
         position: absolute;
-        top: 50%;
-        left: 30%;
-        transform: translateY(-50%);
+        top:20%;
+
+        @mixin atMedium{
+            top: 50%;
+            left: 30%;
+            transform: translateY(-50%);
+        }  
     }
 
     &__close {

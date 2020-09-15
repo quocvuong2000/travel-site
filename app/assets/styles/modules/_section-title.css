@@ -29,7 +29,7 @@
     }
 
     &-margin-b-atMedium {
-        margin-bottom : 8rem;
+        margin-bottom : 6rem;
         @mixin atMedium {
           margin-bottom : 8rem;
         }

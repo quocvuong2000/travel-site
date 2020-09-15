@@ -1,5 +1,6 @@
 import $ from "jquery";
 import Waypoints from './../../../../node_modules/waypoints/lib/noframework.waypoints';
+import smoothScroll from 'jquery-smooth-scroll';
 
 class StickyHeader {
     constructor() {
@@ -10,6 +11,11 @@ class StickyHeader {
         this.createLinkPointer();
         this.primaryNav = $(".primary-nav a");
         this.deleteColorWhenReachTitle();
+        this.smoothingScrolling();
+    }
+
+    smoothingScrolling () {
+        this.primaryNav.smoothScroll();
     }
 
     createStickyWaypoint ()  {

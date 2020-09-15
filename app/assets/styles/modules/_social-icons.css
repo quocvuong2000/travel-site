@@ -5,11 +5,14 @@
     background-color: $orangeCarot;
     display: inline-block;
     margin : 0 5px;
-    width: 55px;
-    height: 68px;
+    width: 40px;
+    height: 55px;
+    border-radius: 15px;
     @mixin atMedium {
     width: 72px;
     height: 72px;
+    border-radius: 0px;
+
     }
 
     }
@@ -17,10 +20,13 @@
 
     img {
     margin-top: 14px;   
-    max-width: 60px;
+    width: 30px;
+    height: 30px;
 
     @mixin atMedium {
         max-width: 100%;
+        width: auto;
+        height: auto;
     }
 
     }

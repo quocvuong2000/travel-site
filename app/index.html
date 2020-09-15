@@ -4,7 +4,7 @@
 <head>
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <link href='https://fonts.googleapis.com/css?family=Roboto:400,100,300,500,700' rel='stylesheet' type='text/css'>
-  <link rel="stylesheet" href="./temp/style.css/style.css" >
+  <link rel="stylesheet" href="./temp/style.css/style.css">
   <meta name="keywords" content="Travel planning, travel bundles, travel escapes">
   <meta name="description"
     content="Your clarity. One trip away. We create soul restoring journeys that inspire you to be you.">
@@ -23,7 +23,7 @@
 
       <div class="site-header__menu-content">
         <div class="site-header__btn-container">
-          <a href="#" class="btn">Get in Touch</a>
+          <a href="#" class="btn open-modal">Get in Touch</a>
         </div>
         <nav class="primary-nav primary-nav--pull-right">
           <ul>
@@ -53,7 +53,7 @@
         <h1 class="large-hero__title">Your clarity.</h1>
         <h2 class="large-hero__subtitle">One trip away.</h2>
         <p class="large-hero__description">We create soul restoring journeys that inspire you to be you.</p>
-        <p><a href="#" class="btn btn--orange btn-large">Get Started Today</a></p>
+        <p><a href="#" class="btn btn--orange btn-large open-modal">Get Started Today</a></p>
       </div>
     </div>
   </div>
@@ -231,9 +231,29 @@
   <footer class="site-footer">
     <div class="wrapper">
       <p><span class="site-footer__text"> &copy; 2019 Clear View Escapes. All rights reserved.</span>
-        <a href="#" class="btn btn--orange"> Get in Touch</a></p>
+        <a href="#" class="btn btn--orange open-modal"> Get in Touch</a></p>
     </div>
   </footer>
+
+  <div class="modal">
+    <div class="modal__inner">
+      <h2 class="section-title section-title__modal section-title--less-margin"><img class="section-title__icon"
+          src="assets/images/icons/mail.svg">Get in
+        <strong>Touch</strong></h2>
+      <div class="wrapper wrapper--narrow">
+        <p class="modal__description">We will have an order online system in place soon. until then, connect with us on
+          any of the platforms belows</p>
+      </div>
+      <div class="social-icons">
+        <a href="#" class="social-icons__icon"><img src="assets/images/icons/facebook.svg" alt="Facebook"></a>
+        <a href="#" class="social-icons__icon"><img src="assets/images/icons/twitter.svg" alt="Twitter"></a>
+        <a href="#" class="social-icons__icon"><img src="assets/images/icons/instagram.svg" alt="Instagram"></a>
+        <a href="#" class="social-icons__icon"><img src="assets/images/icons/youtube.svg" alt="YouTube"></a>
+      </div>
+    </div>
+
+    <div class="modal__close">X</div>
+  </div>
   <!-- Leave this commented out HTML here until you need it for an upcoming "modal" lesson
   <div class="modal">
     <div class="modal__inner">
@@ -252,7 +272,7 @@
     <div class="modal__close">X</div>
   </div>
   This is the end of the "modal" reference HTML -->
-<script src="./temp/scripts/App.js"></script>
+  <script src="./temp/scripts/App.js"></script>
 
 </body>
 

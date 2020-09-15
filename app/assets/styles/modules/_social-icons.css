@@ -1,0 +1,27 @@
+.social-icons {
+    text-align: center;
+
+    &__icon {
+    background-color: $orangeCarot;
+    display: inline-block;
+    margin : 0 5px;
+    width: 55px;
+    height: 68px;
+    @mixin atMedium {
+    width: 72px;
+    height: 72px;
+    }
+
+    }
+
+
+    img {
+    margin-top: 14px;   
+    max-width: 60px;
+
+    @mixin atMedium {
+        max-width: 100%;
+    }
+
+    }
+}
